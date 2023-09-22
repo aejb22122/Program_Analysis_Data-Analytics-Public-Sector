@@ -1,1 +1,10 @@
+df <- read.csv("adm2020.csv")
+# 
+df$ENRLW[1337]
 
+count(df[is.na(df$ADMSSNM) | is.na(df$ADMSSNW), ])
+sum(is.na(df$ADMSSNM) == TRUE | is.na(df$ADMSSNW))
+mean(df$ADMSSNM, na.rm = TRUE)
+mean(df[!is.na(df$ADMSSNM), c('ADMSSNM') ])
+
+# Survey Data Analytics
